@@ -171,6 +171,6 @@ The speakers answered our team's question:
 This event is also the first time some of the speaker's first time presenting a topic:
 - The DevOps and IaC sections was well presented 
 - Monitoring & Observability wasn't as great and we can notice the speaker's nervousness but still delivered great values regardless
-
+Yo
 #### Some event photos
 ![Group picture during the event taken by speaker Tran Dai Vi](/images/Events/CM2GroupPic.jpg)
