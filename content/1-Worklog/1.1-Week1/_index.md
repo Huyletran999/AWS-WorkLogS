@@ -1,57 +1,36 @@
----
+﻿---
 title: "Week 1 Worklog"
-date: "`r Sys.Date()`"
+date: "2025-09-09"
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 1 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Connect with FCJ members and mentors.
+* Find out what working in an office is like.
+* Install Linux, learn how to properly use Linux.
+* Learn the basics of AWS, console and CLI.
+* Complete first and second module.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+
+| Day      | Task                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Start Date | Completion Date | Reference Material                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mon      | - Read internship rules<br> - Create AWS account <br>  - Learnt what AWS is <br>- Module 1 Lab 1 Done (Learnt how to create AWS account and manage user groups) <br>- Module 1 Lab 7 Done (Learnt how to create budgets of using the service) <br>- Lab 7-3 (Usage Budget) cannot be done, error in usage type dropdown, showing nothing <br>- Module 1 Lab 9 Done (Learnt about AWS Support Services, Its type, benefits and how to request supports)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | 08/09/2025 | 08/09/2025      | [Create new AWS Account](https://000001.awsstudygroup.com/1-create-new-aws-account/) <br><br> [MFA for AWS Accounts](https://000001.awsstudygroup.com/2-mfa-setup-for-aws-user-root/) <br><br> [Create Admin Group and Admin User](https://000001.awsstudygroup.com/3-create-admin-user-and-group/) <br><br> [Account Authentication Support](https://000001.awsstudygroup.com/4-verify-new-account/) <br><br> [Explore and Configure AWS Management Console](https://000001.awsstudygroup.com/5-explore-and-configure-the-aws-management-console/) <br><br> [Creating Support Cases and Case Management in AWS](https://000001.awsstudygroup.com/6-support-cases/) |
+| Tue      | - Get started on Module 2 theory:<br>&emsp; + Learnt about VPC (Amazon Virtual Private Cloud)<br>&emsp; + Learnt about Subnets and Routetable, Security Groups<br>&emsp; + Learnt about ENI and EIP<br>&emsp; + Learnt about VPC Peering and Transit Gateway <br>&emsp; + Learnt about Elastic Load Balancing<br>&emsp; + Learnt about EC2<br> - Setup site for workshop report <br> - Installed Hugo <br> - Successfully write worklog using markdown and Hugo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 09/09/2025 | 09/09/2025      | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Wed -Sun | - Complete Module 2's labs<br> - Lab 3: <br>&emsp; + Learnt about the resources necessary to create and run EC2 instances <br>&emsp; + Successfully configured and run EC2 instances <br>&emsp; + Successfully connect and ping to EC2 instances <br>&emsp; + Created NAT Gateway to allow private EC2 connections <br> - Lab 10: <br>&emsp; + Learnt how to create and use keypair for security <br>&emsp; + Learnt how to configure security group to manage connections <br>&emsp; + Successfully connect and use RDP via EC2 <br>&emsp; + Set up hybrid DNS with Route 53 Resolver (In progress, Cloud Formation template didn't create security group to proceed with the lab) <br> - Lab 19: <br>&emsp; + Successfully created VPC Peering Connection <br> &emsp; + Learnt how to configure Network ACLs <br> &emsp; + Enabled Cross-Peer DNS to resolve private host names <br> - Downloaded and used MobaXTerm to connect to EC2 instances <br> - Downloaded and used Putty to configures keypairs | 10/09/2025 | 12/09/2025      | [Lab 3](https://000003.awsstudygroup.com/) <br><br> [Lab 10](https://000010.awsstudygroup.com/) <br><br> [Lab 19](https://000019.awsstudygroup.com/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |            |                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |            |                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 ### Week 1 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Created and secured an AWS account, including setting up budgets and exploring support services.
+* Completed theory and practical labs for VPC, Subnets, Security Groups, and Routetables.
+* Successfully deployed and connected to EC2 instances, configured a NAT Gateway, and managed key connections using VPC Peering and AWS Transit Gateway.
+* Gained hands-on experience with S3 Buckets (static website hosting, versioning, replication), AWS Backup, and Storage Gateway.
+* Documentation Setup: Successfully installed Hugo and configured the site for writing the worklog using markdown.
+* Tool Proficiency: Learned to use MobaXTerm and PuTTY for connecting to and managing EC2 instances.
+* Successfully fixed an outdated CloudFormation template during the Transit Gateway lab and learned cost management through budget alerts.
+* Completed Module 1 and Module 2, and made a strong start on Module 3.

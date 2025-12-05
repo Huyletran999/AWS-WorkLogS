@@ -1,126 +1,59 @@
----
+﻿---
 title: "Blog 2"
-date: "`r Sys.Date()`"
+date: 2025-09-10
 weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Getting Started with Healthcare Data Lakes: Using Microservices
+# GIỚI THIỆU AWS TRUST CENTER
 
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
+**Tác giả:** Chris Betz
+**Ngày:** 14 tháng 2 năm 2025
+**Danh mục:** Announcements, Featured, Security, Identity & Compliance
 
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, *“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”*, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
+Tại Amazon Web Services (AWS), việc giành được niềm tin không chỉ là một mục tiêu – đó là một trong những Nguyên tắc Lãnh đạo cốt lõi (Leadership Principles) định hướng cho mọi quyết định mà chúng tôi đưa ra. Là Giám đốc An ninh Thông tin (CISO) của AWS, tôi đã chứng kiến tận mắt cam kết này định hình nên văn hóa, dịch vụ, và cách chúng tôi tương tác hàng ngày với khách hàng.
 
----
+Khách hàng chọn AWS thay vì các nhà cung cấp khác bởi vì họ tin tưởng rằng chúng tôi sẽ cung cấp hạ tầng và dịch vụ an toàn nhất, đồng thời minh bạch hoàn toàn về cách dữ liệu được bảo vệ. Để giúp việc tìm kiếm thông tin đó trở nên dễ dàng hơn, chúng tôi ra mắt **AWS Trust Center**, một nguồn tài nguyên trực tuyến mới chia sẻ cách chúng tôi tiếp cận vấn đề bảo mật tài sản của bạn trên nền tảng đám mây.
 
-## Architecture Guidance
+AWS Trust Center là cửa sổ thể hiện các quy trình bảo mật, chương trình tuân thủ và biện pháp bảo vệ dữ liệu của chúng tôi - chứng minh cách chúng tôi làm việc mỗi ngày để xứng đáng với niềm tin của bạn.
 
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
+## Xây dựng trên nền tảng của sự tin cậy
 
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
+Bảo mật luôn là ưu tiên hàng đầu của chúng tôi từ ngày đầu tiên. Khi ra mắt AWS vào năm 2006, chúng tôi đã thiết kế hạ tầng trở thành môi trường điện toán đám mây an toàn nhất có thể. Chúng tôi biết rằng mình không thể chỉ cung cấp mức độ bảo mật tương đương với hạ tầng tại chỗ (on-premises); để giành được niềm tin của khách hàng, chúng tôi phải vượt qua và làm thay đổi các tiêu chuẩn bảo mật nghiêm ngặt nhất của các tổ chức hàng đầu thế giới.
 
-**The solution architecture is now as follows:**
+Chúng tôi liên tục củng cố bảo mật trong từng quyết định hàng ngày. Với Trust Center, chúng tôi giúp bạn hiểu rõ hơn về cách chúng tôi bảo vệ khối lượng công việc, dữ liệu, và hỗ trợ bạn đạt được các mục tiêu tuân thủ. Trust Center phản ánh niềm tin của chúng tôi rằng việc cung cấp thông tin dễ tiếp cận hơn sẽ giúp xây dựng và duy trì niềm tin. Dù bạn đang tìm hiểu về kiểm soát trung tâm dữ liệu, kiểm tra chứng nhận tuân thủ, hay xem lại mô hình trách nhiệm chia sẻ (shared responsibility model), bạn đều có thể tìm thấy tất cả thông tin bảo mật và tuân thủ cần thiết tại một địa điểm duy nhất.
 
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+## Một nguồn thông tin duy nhất cho bảo mật và tuân thủ
 
----
+Trong Trust Center, bạn sẽ tìm thấy thông tin về cách chúng tôi tiếp cận bảo mật ở mọi cấp độ từ trung tâm dữ liệu vật lý, hạ tầng đám mây, cho đến danh mục dịch vụ AWS. Chúng tôi cung cấp tài liệu về các dịch vụ và công cụ bảo mật, giúp bạn hiểu được cách chúng tôi bảo mật đám mây và cách chúng tôi hỗ trợ bạn bảo mật khối lượng công việc của mình trong đó.
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+Bạn cũng sẽ tìm thấy thông tin về các chương trình tuân thủ, bao gồm chứng nhận và báo cáo đánh giá (attestations) mà chúng tôi duy trì trên toàn cầu. Điều này đặc biệt hữu ích cho các nhóm làm việc trong ngành được quản lý chặt chẽ, những người cần chứng minh tính tuân thủ với kiểm toán viên và cơ quan quản lý.
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
+Trust Center còn nhấn mạnh thông tin về thực hành bảo vệ và quyền riêng tư dữ liệu. Khách hàng có thể tìm hiểu cách chúng tôi bảo vệ dữ liệu và quản lý mã hóa. Bên cạnh đó, chúng tôi hiểu rằng khách hàng quan tâm đến việc ai có thể truy cập dữ liệu của họ và trong hoàn cảnh nào. Chúng tôi đã tổng hợp thông tin chi tiết về cơ chế kiểm soát quyền truy cập của nhân viên vận hành (operator access controls), được thiết kế dựa trên nguyên tắc đặc quyền tối thiểu (least privilege).
 
----
+Bạn sẽ biết thêm về:
+* Thiết kế không truy cập (zero-access) đối với các dịch vụ cốt lõi như AWS Key Management Service (AWS KMS) và Amazon Elastic Compute Cloud (Amazon EC2).
+* Forward Access Sessions (FAS) - phương thức mã hóa để thực thi ủy quyền của khách hàng.
+* Hệ thống giám sát toàn cầu của chúng tôi.
 
-## Technology Choices and Communication Scope
+Trust Center cũng cung cấp một vị trí trung tâm để bạn tìm thấy thông tin về trạng thái dịch vụ và các sự kiện bảo mật, giúp bạn duy trì hiệu quả vận hành cao. Bạn có thể cập nhật các bản tin bảo mật, kiểm tra tình trạng dịch vụ theo thời gian thực, và nếu cần báo cáo mối quan ngại bảo mật hoặc tiến hành đánh giá bảo mật, các quy trình đó cũng được trình bày rõ ràng và dễ tìm hơn bao giờ hết. Các tài nguyên được sắp xếp logic và dễ truy cập, với liên kết trực tiếp đến các thỏa thuận, tài liệu và nguồn thông tin giúp bạn đưa ra quyết định chính xác về tư thế bảo mật trên đám mây của mình.
 
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+## Trao quyền cho khách hàng thúc đẩy đổi mới an toàn
 
----
+Điều khiến tôi phấn khích nhất về Trust Center chính là khả năng loại bỏ rào cản cho khách hàng. Với thông tin bảo mật chi tiết, liên kết dễ dàng đến tài liệu tuân thủ, và dữ liệu vận hành sẵn có, bạn có thể hành động nhanh hơn và đổi mới với sự tự tin.
 
-## The Pub/Sub Hub
+Khi chúng tôi tiếp tục đổi mới và mở rộng các dịch vụ AWS, chúng tôi cam kết nâng cấp Trust Center với những thông tin bảo mật mới nhất. Đây là một tài nguyên sống (living resource) sẽ phát triển song song với đám mây và dịch vụ của chúng tôi.
 
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
+Duy trì niềm tin của bạn không chỉ là những gì chúng tôi đã xây dựng hôm nay, mà còn là việc chứng minh – qua cam kết và hành động – rằng chúng tôi xứng đáng trở thành đối tác bảo mật đáng tin cậy của bạn. Đó chính là cam kết của chúng tôi dành cho bạn, và cũng là điều mà AWS Trust Center đại diện.
 
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
+## Khám phá AWS Trust Center
 
----
+Chúng tôi mời bạn khám phá AWS Trust Center ngay hôm nay, và mong muốn tiếp tục giành được niềm tin của bạn mỗi ngày.
 
-## Core Microservice
+* Nếu bạn có phản hồi về bài viết này, vui lòng để lại bình luận trong phần Comments bên dưới.
+* Nếu bạn có câu hỏi liên quan, hãy liên hệ với AWS Support.
 
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
+## Về tác giả
 
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
-
----
-
-## Front Door Microservice
-
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
-
----
-
-## Staging ER7 Microservice
-
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
-
----
-
-## New Features in the Solution
-
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+**Chris Betz** là Giám đốc An ninh Thông tin (CISO) tại AWS. Ông phụ trách giám sát các nhóm bảo mật và lãnh đạo việc phát triển cũng như triển khai các chính sách bảo mật với mục tiêu quản lý rủi ro và điều chỉnh tư thế bảo mật của công ty phù hợp với các mục tiêu kinh doanh. Chris gia nhập Amazon vào tháng 8 năm 2023 sau khi đảm nhiệm các vị trí CISO và vai trò lãnh đạo bảo mật tại nhiều công ty hàng đầu. Ông hiện sinh sống cùng gia đình tại Bắc Virginia.

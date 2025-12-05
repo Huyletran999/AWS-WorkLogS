@@ -1,59 +1,39 @@
----
-title: "Worklog Tuần 8"
-date: "`r Sys.Date()`"
-weight: 1
+﻿---
+title: "Nhật ký công việc Tuần 8"
+date: "2025-10-27"
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Mục tiêu Tuần 8:
+
+* Ôn tập kiến thức AWS.
+* Hoàn thành bài thi giữa kỳ FCJ.
+* Thúc đẩy dự án Ứng phó sự cố bằng cách triển khai cơ chế cô lập và nghiên cứu cải tiến quy trình điều phối.
+
+### Các nhiệm vụ thực hiện trong tuần này:
 
 
-### Mục tiêu tuần 8:
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| :--- | :--- | :---: | :---: | :--- |
+| T2 | - Xem lại các video học tập của FCJ Bootcamp<br> - Hoàn thành bài kiểm tra AWS Cloud Essentials <br> - Tìm hiểu sâu về các dịch vụ AWS đã học và so sánh các dịch vụ tương tự nhau <br> - Xem qua một số AWS Well-Architected Lab để hiểu rõ hơn về các trụ cột chính <br> - Tạo thành công Lambda function để cô lập EC2 và hiện đang chờ kiểm thử <br> - Kiến trúc AWS: <br>&emsp; + Nghiên cứu cách tích hợp AWS Step Functions để tự động hóa, thay vì chỉ sử dụng một Lambda cho tất cả các hành động IR | 27/10/2025 | 27/10/2025 | [AWS Cloud Essentials Quiz](https://www.w3schools.com/quiztest/quiztest.php?qtest=AWSCE) <br><br> [AWS Well Architected Lab](https://wellarchitectedlabs.com/) |
+| T3 | - Tạo 500 Flashcard AWS cùng các thành viên trong nhóm để học tập | 28/10/2025 | 28/10/2025 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
+| T4 | - Ôn thi giữa kỳ | 29/10/2025 | 29/10/2025 | [Introduction to Research for Essay Writing](https://www.coursera.org/account/accomplishments/verify/TMHKPIXOHA6H) |
+| T5 | - Luyện tập sử dụng ghi chú AWS Certified Cloud Practitioner của học viên khác: Làm 5 bài kiểm tra thử<br> - Luyện tập câu hỏi AWS Certified Solutions Architect Associate: Làm 40 câu hỏi | 30/10/2025 | 30/10/2025 | [AWS Certified Cloud Practitioner notes](https://github.com/kananinirav/AWS-Certified-Cloud-Practitioner-Notes/tree/master/practice-exam) <br><br> [AWS Certified Solutions Architect Associate practice](https://github.com/Iamrushabhshahh/AWS-Certified-Solutions-Architect-Associate-SAA-C03-Exam-Dump-With-Solution/blob/main/AWS%20Certified%20Solutions%20Architect%20Associate%20SAA-C03.pdf) |
+| T6 | - Tham gia kỳ thi giữa kỳ FCJ | 31/10/2025 | 31/10/2025 | |
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Thành tựu Tuần 8:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* **Kỳ thi giữa kỳ FCJ:**
+  * Hoàn thành việc luyện tập kỹ càng bằng cách làm 5 bài test thử AWS Certified Cloud Practitioner và trả lời 40 câu hỏi luyện tập AWS Certified Solutions Architect Associate.
+  * Phối hợp với thành viên nhóm tạo 500 Flashcard AWS để tập trung học tập.
+  * Hoàn thành bài kiểm tra AWS Cloud Essentials và xem lại video học tập FCJ Bootcamp.
+  * Tham gia thành công kỳ thi giữa kỳ FCJ và đạt điểm số 320/650.
+  * Ôn tập các dịch vụ AWS chính và AWS Well-Architected Labs để hiểu các trụ cột cốt lõi.
 
+* **Nghiên cứu Kiến trúc Workshop:**
+  * Nghiên cứu tích hợp kiến trúc AWS Step Functions để điều phối các hành động Ứng phó sự cố (Incident Response - IR), thay thế cho việc dùng một Lambda function duy nhất.
 
-### Kết quả đạt được tuần 8:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Phát triển & Phân tích Dịch vụ:**
+  * **Tự động hóa Cô lập:** Lập trình và triển khai thành công Lambda function chuyên biệt để cô lập EC2 instance, chuyển dự án từ giai đoạn nghiên cứu sang triển khai thực tế.
+  * **Ra quyết định về Kiến trúc:** Thực hiện so sánh chuyên sâu giữa AWS Lambda và AWS Step Functions để xác định chiến lược điều phối tối ưu cho quy trình Ứng phó sự cố.

@@ -1,125 +1,78 @@
----
-title: "Event 1"
-date: "`r Sys.Date()`"
+﻿---
+title: "Sự kiện 1"
+date: "2025-10-03"
 weight: 1
 chapter: false
-pre: " <b> 4.1. </b> "
+pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Báo cáo tóm tắt: “Vòng đời phát triển định hướng AI: Tái định hình Kỹ thuật phần mềm”
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+### Mục tiêu sự kiện
 
-### Mục Đích Của Sự Kiện
+- Khám phá sự chuyển đổi mang tính cách mạng trong phát triển phần mềm được thúc đẩy bởi AI tạo sinh.
+- Giới thiệu Vòng đời phát triển định hướng AI (AI-DLC) và các khái niệm cốt lõi của nó.
+- Demo Kiro và Amazon Q Developer
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+### Diễn giả
 
-### Danh Sách Diễn Giả
+- **Toan Huynh** – Specialist SA, PACE
+- **My Nguyen** - Sr. Prototyping Architect, Amazon Web Services - ASEAN
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
 
-### Nội Dung Nổi Bật
+### Những điểm nổi bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+- Tập trung vào khái niệm AI-DLC, một khuôn khổ nơi AI điều phối quy trình phát triển, bao gồm lập kế hoạch, phân rã tác vụ và đề xuất kiến trúc, trong khi các nhà phát triển giữ trách nhiệm cuối cùng về việc xác nhận, ra quyết định và giám sát.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+**- Khái niệm cốt lõi của AI-DLC:** Cách tiếp cận này lấy Con người làm trung tâm, với AI đóng vai trò là Cộng tác viên để nâng cao năng lực của nhà phát triển, dẫn đến Tăng tốc độ phân phối (chu kỳ được tính bằng giờ/ngày thay vì tuần/tháng).
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+**- Quy trình làm việc AI-DLC:** Đây là một vòng lặp lặp lại bao gồm các Tác vụ AI (Tạo kế hoạch, Thực hiện kế hoạch, Tìm kiếm sự làm rõ) và Tác vụ con người (Cung cấp sự làm rõ, Thực hiện kế hoạch), trong đó AI liên tục đặt câu hỏi làm rõ và chỉ thực hiện các giải pháp sau khi con người xác nhận.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+**- Các giai đoạn AI-DLC:** Vòng đời được chia thành Khởi tạo, Xây dựng và Vận hành. Mỗi giai đoạn xây dựng ngữ cảnh phong phú hơn cho giai đoạn tiếp theo:
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
++ Khởi tạo (Inception): Bao gồm xây dựng ngữ cảnh, mô tả chi tiết ý định với User Stories và lập kế hoạch với các Đơn vị công việc (Units of Work).
 
-#### Domain-Driven Design (DDD)
++ Xây dựng (Construction): Liên quan đến Mô hình hóa miền (Domain Modeling), tạo mã và kiểm thử, thêm các thành phần kiến trúc và triển khai với IaC & kiểm thử.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
++ Vận hành (Operation): Tập trung vào triển khai trong môi trường production và quản lý sự cố.
 
-#### Event-Driven Architecture
+**- Những thách thức mà AI-DLC hướng tới giải quyết:**
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
++ Mở rộng phát triển AI: Các công cụ lập trình AI có thể thất bại với các dự án phức tạp.
 
-#### Compute Evolution
++ Kiểm soát hạn chế: Các công cụ hiện có gây khó khăn trong việc cộng tác và quản lý các tác nhân AI.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
++ Chất lượng mã: Việc duy trì kiểm soát chất lượng khi chuyển từ bằng chứng khái niệm (PoC) sang môi trường production trở nên khó khăn.
 
-#### Amazon Q Developer
+# Đi sâu chi tiết: Kiro - IDE AI cho Nguyên mẫu đến Production
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+- Kiro, một Môi trường phát triển tích hợp (IDE) ưu tiên AI hỗ trợ AI-DLC, tập trung vào phát triển dựa trên đặc tả (Spec-driven development).
 
-### Những Gì Học Được
+**- Phát triển dựa trên đặc tả:** Kiro chuyển đổi một câu lệnh cấp cao (ví dụ: "Tôi muốn tạo một ứng dụng trò chuyện giống Slack") thành các yêu cầu rõ ràng (requirements.md), thiết kế hệ thống (design.md) và các tác vụ riêng biệt (tasks.md), thay đổi căn bản việc phát triển từ "viết code theo cảm tính" (vibe coding) sang một quy trình có cấu trúc, có thể truy xuất nguồn gốc. Các nhà phát triển cộng tác với Kiro trên các thông số kỹ thuật này, đóng vai trò là nguồn sự thật.
 
-#### Tư Duy Thiết Kế
+**- Quy trình làm việc tác nhân (Agentic Workflows):** Các tác nhân AI của Kiro thực hiện đặc tả trong khi vẫn giữ nhà phát triển con người nắm quyền kiểm soát, với các tính năng chính là:
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+**+ Kế hoạch thực hiện:** Kiro tạo ra một Kế hoạch thực hiện chi tiết với các tác vụ bắt đầu, tác vụ phụ (ví dụ: "Triển khai đăng ký người dùng và endpoint đăng nhập", "Triển khai phần mềm trung gian JWT") và liên kết chúng lại với các yêu cầu cụ thể để xác nhận.
 
-#### Kiến Trúc Kỹ Thuật
+**+ Agent Hooks:** Các hook này ủy quyền các tác vụ cho các tác nhân AI kích hoạt dựa trên các sự kiện như "lưu tệp". Chúng tự động thực thi trong nền dựa trên các lời nhắc được xác định trước, giúp mở rộng công việc bằng cách tạo tài liệu, kiểm thử đơn vị hoặc tối ưu hóa hiệu suất mã.
+### Những điểm chính cần ghi nhớ
+**- AI đảm bảo sự sẵn sàng cho Production:** Việc Kiro tạo ra các tài liệu thiết kế chi tiết (như sơ đồ luồng dữ liệu và hợp đồng API) và tạo các bài kiểm tra đơn vị trước khi mã được viết, đảm bảo rằng mã do AI tạo ra đã sẵn sàng cho production và có thể bảo trì, không chỉ là một nguyên mẫu nhanh chóng.
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+**- Kiểm soát của con người thông qua các tạo tác:** Các nhà phát triển duy trì quyền kiểm soát không phải bằng cách viết phần lớn mã, mà bằng cách xác nhận và tinh chỉnh các tạo tác—các yêu cầu, thiết kế và kế hoạch tác vụ—trước khi các tác nhân AI thực hiện việc triển khai.
 
-#### Chiến Lược Hiện Đại Hóa
+### Ứng dụng vào công việc
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+**- Tích hợp Amazon Q Developer/Các công cụ tương tự:** Tích hợp các trợ lý lập trình AI vào các dự án học thuật của tôi để tự động hóa mã mẫu và các tác vụ chung nhằm tăng năng suất.
 
-### Ứng Dụng Vào Công Việc
+**- Tập trung vào các tác vụ giá trị cao:** Bằng cách để AI tự động hóa những công việc nặng nhọc không phân biệt, tôi có thể tập trung thời gian vào việc làm chủ các tác vụ sáng tạo, có giá trị cao hơn như Mô hình hóa miền và Thiết kế kiến trúc, vốn là những hoạt động lấy con người làm trung tâm rất quan trọng trong giai đoạn Xây dựng.
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+### Trải nghiệm sự kiện
 
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+Việc tham dự sự kiện **Vòng đời phát triển định hướng AI: Tái định hình Kỹ thuật phần mềm** đã mang lại cái nhìn hấp dẫn về tương lai của phát triển phần mềm. Rõ ràng là AI tạo sinh không chỉ là một trợ lý lập trình; nó đang ở vị thế trở thành người điều phối cốt lõi của toàn bộ quy trình phát triển. Phiên làm việc được cấu trúc tốt, đi từ khái niệm bao quát của AI-DLC đến các bản demo cụ thể của Amazon Q Developer và Kiro. Bản demo của Kiro đặc biệt ấn tượng, cho thấy cách một lời nhắc văn bản đơn lẻ có thể được chuyển đổi thành một kế hoạch phát triển đầy đủ, có thể thực thi và có thể truy xuất nguồn gốc ngay bên trong IDE.
 
 #### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+- Ba thách thức chính với sự phát triển AI hiện tại (mở rộng quy mô, kiểm soát hạn chế và chất lượng mã) làm cho cách tiếp cận có cấu trúc, được con người xác nhận của AI-DLC trở nên vô cùng cần thiết và được cân nhắc kỹ lưỡng.
 
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+
+#### Một số hình ảnh sự kiện
+![Ảnh nhóm trong sự kiện](/images/Events/TheBois-AIDLC.jpg)

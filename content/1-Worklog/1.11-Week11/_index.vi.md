@@ -1,59 +1,45 @@
----
-title: "Worklog Tuần 11"
-date: "`r Sys.Date()`"
+﻿---
+title: "Nhật ký công việc Tuần 11"
+date: "2025-11-17"
 weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Mục tiêu Tuần 11:
 
+* Tối ưu hóa kiến trúc về chi phí và độ tin cậy (tích hợp SQS & phân tích API S3).
+* Nâng cao kiến thức về Bảo mật biên (WAF/CloudFront) và Cơ sở hạ tầng dưới dạng mã (IaC - CDK).
+* Hoàn tất kiểm thử cô lập EC2 và tinh chỉnh dashboard tùy chỉnh.
 
-### Mục tiêu tuần 11:
+### Các nhiệm vụ thực hiện trong tuần này:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| :---: | :--- | :--------: | :-------------: | :----------------- |
+| T2 | - Tham gia **AWS Cloud Mastery Series #2**: Có được cái nhìn sâu sắc về CDK và CloudFormation cho dự án và nhận được khuyến nghị từ mentor về chiến lược demo.<br> - Viết bài tổng kết trải nghiệm sự kiện. | 17/11/2025 | 17/11/2025 | |
+| T3 | - **Tổng quan Dashboard:** Cập nhật giao diện frontend để hiển thị các trường thông tin quan trọng hơn.<br> - **Chỉnh sửa Kiến trúc:** <br>&emsp; + Loại bỏ Glue Crawler để giảm độ phức tạp.<br>&emsp; + Thêm **Amazon SQS** vào giữa EventBridge và Step Functions để làm bộ đệm.<br> - **Phân tích Chi phí:** Phát hiện các lệnh gọi API S3 GET quá mức từ Lambda xử lý CloudTrail; lên kế hoạch cập nhật giá.<br> - **Triển khai:**<br>&emsp; + Cô lập thành công EC2 trong môi trường kiểm thử.<br>&emsp; + Nâng cấp CloudWatch ETL Lambda để xử lý log thông qua trigger mà không cần Crawler.<br> - Sao lưu mã nguồn của tất cả các Lambda function. | 18/11/2025 | 18/11/2025 | |
+| T4 | - Tham gia **Workshop Bảo vệ Ứng dụng: AWS Perimeter Protection**.<br>&emsp; + Tìm hiểu sâu về cấu hình CloudFront và WAF.<br>&emsp; + Xem xét gói giá (pricing tier) mới của CloudFront.<br> - Học cách thiết lập **API Gateway REST APIs** để chuẩn bị tích hợp dashboard. | 19/11/2025 | 19/11/2025 | [AWS Perimeter Protection](https://catalog.us-east-1.prod.workshops.aws/workshops/32e6bc9a-5c03-416d-be50-34358a8a5f64/en-US) |
+| T6 | - Nghiên cứu **AWS CDK**: Cài đặt, sử dụng và cấu hình stack để chuẩn bị cho việc di chuyển sang IaC vào tuần tới. | 21/11/2025 | 21/11/2025 | [AWS CDK Github](https://github.com/aws/aws-cdk) <br><br> [AWS CDK Document](https://docs.aws.amazon.com/cdk/v2/guide/home.html) |
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Thành tựu Tuần 11:
 
+* **Tối ưu hóa Kiến trúc & Quản lý Chi phí:**
+  * Tinh chỉnh kiến trúc hướng sự kiện (event-driven) bằng cách tách biệt EventBridge và Step Functions sử dụng **Amazon SQS** để đảm bảo độ bền và tin cậy của tin nhắn.
+  
+  * Thực hiện **phân tích chi phí** quan trọng cho pipeline log, xác định cấu hình Lambda hiện tại đang tạo ra quá nhiều yêu cầu S3 GET và lập kế hoạch tối ưu hóa chi phí API.
+  * Tinh gọn **ETL Pipeline** bằng cách loại bỏ AWS Glue Crawler và nâng cấp CloudWatch Lambda để hoạt động hoàn toàn dựa trên sự kiện kích hoạt từ S3 (S3 event triggers).
 
-### Kết quả đạt được tuần 11:
+* **Học tập về Bảo mật & Mạng:**
+  * Có kinh nghiệm thực tế về bảo vệ biên (perimeter protection) thông qua việc hoàn thành **AWS Perimeter Protection Workshop**, tập trung vào cấu hình **AWS WAF** (Web Application Firewall) và **Amazon CloudFront**.
+  
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+[Image of AWS CloudFront and WAF architecture]
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+  * Nghiên cứu **API Gateway REST APIs** để hỗ trợ việc tích hợp dashboard bảo mật tùy chỉnh trong tương lai.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* **Chuẩn bị cho Infrastructure as Code (IaC):**
+  * Tận dụng kiến thức từ **AWS Cloud Mastery Series #2** để lên kế hoạch chuyển đổi dự án sang Infrastructure as Code.
+  * Hoàn thành nghiên cứu nền tảng về **AWS CDK**, bao gồm cài đặt, cấu hình stack và sử dụng construct để chuẩn bị cho giai đoạn triển khai.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Triển khai Dự án:**
+  * Thực thi và xác minh thành công logic **Cô lập EC2** trong môi trường kiểm thử thực tế.
+  * Cập nhật frontend của dashboard tùy chỉnh để hiển thị các trường thông tin bảo mật liên quan hơn.

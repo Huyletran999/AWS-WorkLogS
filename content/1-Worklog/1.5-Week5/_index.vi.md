@@ -1,59 +1,34 @@
----
-title: "Worklog Tuần 5"
-date: "`r Sys.Date()`"
-weight: 1
+﻿---
+title: "Nhật ký công việc Tuần 5"
+date: "2025-10-06"
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Mục tiêu Tuần 5:
+
+* Tiếp tục xây dựng và lập kế hoạch cho bản đề xuất (proposal)
+
+### Các nhiệm vụ thực hiện trong tuần này:
 
 
-### Mục tiêu tuần 5:
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| :--- | :--- | :---: | :---: | :--- |
+| T5 | - Đã tạo và nghiên cứu các phần việc của mình dựa trên sơ đồ kiến trúc workshop của nhóm | 08/10/2025 | 08/10/2025 | |
+| T6 | - Lab 35:<br>&emsp; + Thiết lập thành công luồng dữ liệu (data stream) sử dụng Kinesis <br>&emsp; + Gửi thành công dữ liệu mẫu đến S3 sử dụng Kinesis Data Generator với Amazon Cognito <br>&emsp; + Học cách sử dụng AWS Glue Crawler để ánh xạ dữ liệu vào S3 Bucket <br>&emsp; + Sử dụng Athena để truy vấn dữ liệu <br>&emsp; + Sử dụng AWS Glue Notebook để xây dựng tập dữ liệu dựa trên dữ liệu mẫu <br>&emsp; + Sử dụng Athena để phân tích dữ liệu và trực quan hóa bằng QuickSight <br> - Cập nhật sơ đồ kiến trúc dựa trên những thay đổi trong đề xuất workshop <br> - Bắt đầu nghiên cứu các thuật toán Lambda cho dự án của nhóm. | 09/10/2025 | 09/10/2025 | [Lab 35](https://000035.awsstudygroup.com/) |
+| T7 | - Lab 40:<br>&emsp; + Thực hành thêm với AWS Glue và Athena, sử dụng để phân tích dữ liệu Chi phí Hàng tháng của AWS. <br> | 10/10/2025 | 10/10/2025 | [Lab 40](https://000040.awsstudygroup.com/) |
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Thành tựu Tuần 5:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* **Kiến trúc Workshop & Nghiên cứu:**
+  * Đã tạo và nghiên cứu các thành phần cụ thể cho kiến trúc workshop của nhóm.
+  * Cập nhật sơ đồ kiến trúc để phản ánh những thay đổi mới nhất trong đề xuất.
+  * Bắt đầu nghiên cứu về các **thuật toán AWS Lambda** sẽ được triển khai trong dự án của nhóm.
 
+* **Luồng dữ liệu và Phân tích (Lab 35):** Hoàn thành bài lab phức tạp về pipeline dữ liệu:
+  * Thiết lập thành công luồng dữ liệu thời gian thực sử dụng **Amazon Kinesis**.
+  * Tạo và gửi dữ liệu mẫu đến S3 bằng Kinesis Data Generator và **Amazon Cognito**.
+  * Sử dụng **AWS Glue Crawler** để ánh xạ dữ liệu và **Glue Notebook** để xây dựng tập dữ liệu.
+  * Thực hiện truy vấn dữ liệu với **Amazon Athena** và trực quan hóa bằng **Amazon QuickSight**.
 
-### Kết quả đạt được tuần 5:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Phân tích Chi phí (Lab 40):** Thực hành phân tích nâng cao bằng cách sử dụng AWS Glue và Athena để phân tích dữ liệu Chi phí Hàng tháng của AWS.

@@ -1,57 +1,37 @@
----
+﻿---
 title: "Week 12 Worklog"
-date: "`r Sys.Date()`"
+date: "2025-11-24"
 weight: 2
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 12 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Initialize and validate the Infrastructure as Code (CDK) environment.
+* Enhance the Incident Response workflow with automated forensics collection (SSM).
+* Debug and refine Lambda functions and IAM roles for reliable execution.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| :-: | :--- | :--------: | :-------------: | :----------------- |
+| 2 | - Successfully installed AWS CDK with AWS CLI<br> - Completed the tutorial for creating a first application with CDK: <br>&emsp; + Deployed stacks on AWS Accounts <br>&emsp; + Used `diff` to compare changes <br>&emsp; + Destroyed stack after finishing <br> - Created a Github Organization for the team | 25/11/2025 | 25/11/2025 | [CDK Tutorial](https://docs.aws.amazon.com/cdk/v2/guide/hello-world.html) |
+| 3 | - **IR Step Functions update:** Added a **Map State** to iterate over isolated Instances and trigger an SSM Lambda for those Instances to collect logs for forensics.<br> - **CDK:** Moved the CDK testing environment to a new dedicated account. | 26/11/2025 | 26/11/2025 | |
+| 6 | - **Team meetings:**<br>&emsp; + Assigned CDK tasks for members <br>&emsp; + Got started on updating proposal and architecture diagram <br> - **Fixed and improved IR Step Functions:** <br>&emsp; + Fixed `EC2Isolate` Lambda: Corrected parsing method <br>&emsp; + Improved state: Added Parsing Lambda and reordered functions <br>&emsp; + SSM Failed due to missing IAM: Added necessary roles to the SSM Forensics Function. | 28/11/2025 | 30/11/2025 | |
 
 ### Week 12 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Infrastructure as Code (IaC) Initialization:**
+  * Successfully installed and configured **AWS CDK** with the CLI.
+  * Mastered the fundamental CDK lifecycle by deploying, diffing, and destroying stacks in a live environment.
+  * Established a **GitHub Organization** to centralize team repositories and manage the migration to CDK.
 
-* Successfully created and configured an AWS Free Tier account.
+* **Incident Response & Forensics Logic:**
+  * Enhanced the Step Functions workflow by implementing a **Map State**, enabling the system to iterate through multiple isolated EC2 instances simultaneously.
+  
+  * Integrated an **SSM (Systems Manager) Lambda** to automatically trigger forensic log collection on compromised instances.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Debugging & Optimization:**
+  * Refined the data handling logic by fixing JSON parsing errors in the `EC2Isolate` Lambda.
+  * Resolved permission issues by attaching the correct **IAM Roles** to the SSM Forensics function, ensuring it has permission to execute commands on EC2 instances.
+  * Optimized the workflow structure by reordering states and adding a dedicated Parsing Lambda for better data flow.

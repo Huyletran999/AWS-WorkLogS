@@ -1,11 +1,9 @@
----
+﻿---
 title: "Internship Report"
-date: "`r Sys.Date()`"
+date: 2025-09-10
 weight: 1
 chapter: false
 ---
-
-    
 # Internship Report
 
 {{% notice warning %}}
@@ -13,17 +11,16 @@ chapter: false
 {{% /notice %}}
 
 ### Student Information:
-&emsp; **Full Name:** Nguyen Van A
 
-&emsp; **Phone Number:** 0989888999 
+&emsp; **Full Name:** Lê Trần Gia Huy
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Phone Number:** 0822746264
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **Email:** huyletran188205@gmail.com
 
-&emsp; **Major:** Information Technology
+&emsp; **University:** FPT University Ho Chi Minh city
 
-&emsp; **Class:** AWS082025
+&emsp; **Major:** Information Assurance
 
 &emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
@@ -31,14 +28,14 @@ chapter: false
 
 &emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
 
-![Your profile picture](/images/avatar.png)
+![Your profile picture](/images/Profile%20pic.jpg)
 
 ### Report Content
 
-1.  [Worklog](1-Worklog/)
-2.  [Proposal](2-Proposal/)
-3.  [Translated Blogs](3-BlogsTranslated/)
-4.  [Events Participated](4-EventParticipated/)
-5.  [Workshop](5-Workshop/)
-6.  [Self-evaluation](6-Self-evaluation/)
-7.  [Sharing and Feedback](7-Feedback/)
+1. [Worklog](1-Worklog/)
+2. [Proposal](2-Proposal/)
+3. [Translated Blogs](3-BlogsTranslated/)
+4. [Events Participated](4-EventParticipated/)
+5. [Workshop](5-Workshop/)
+6. [Self-evaluation](6-Self-evaluation/)
+7. [Sharing and Feedback](7-Feedback/)

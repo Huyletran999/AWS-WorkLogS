@@ -1,57 +1,33 @@
----
-title: "Week 2 Worklog"
-date: "`r Sys.Date()`"
-weight: 1
+﻿title: "Week 2 Worklog"
+date: "2025-09-15"
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
----
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
+----------------------
 
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Understand and configure AWS Transit Gateway.
+* Learn about AWS Storage services (EBS, EFS, S3).
+* Discuss workshop ideas
+* Practice data backup and recovery strategies.
+* Host static websites using S3 and configure CloudFront.
+* Complete Module 3.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+
+| Day | Task                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Start Date | Completion Date | Reference Material                                                                                                                                    |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2   | - Lab 20:<br> - Successfully created AWS Transit Gateway to allow for connection between VPCs via a common hub <br> - Fixed template file, changed EC2 instance type to t3.micro because the account still using free tier                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 15/09/2025 | 15/09/2025      |                                                                                                                                                       |
+| 3   | - Verified the cost and budget plans worked as intended, notified over email.<br>  Get started on Module 3 theory <br>&emsp; Learnt about EBS, Instance store feature and check User and Meta Data <br> - Learnt about Amazon Lightsail <br> Learnt about Elastic File System(EFS) and FSx  <br> - Learnt about MGN <br>&emsp; - Complete Module 3's labs (Part 1)    - Lab 13: Successuly created Backup Plan and Vaults for data in S3 Bucket      + Successfully setted up notification for Backup events      + Successfully restored backup<br> - Complete Module 3's labs (Part 2)    - Lab 24:      + Created storage gateway      + Succesfully completed file sharing <br> - Complete Module 3's labs (Part 3)    - Lab 57:      + Successfully hosted static website using S3 Bucket      + Successfully configured access modifiers      + Accelerate Static Websites with Cloudfront configuration did not work, skipping this step      + Successfully created bucket versions      + Moved objects between buckets      + Replicated bucket across regions. <br>| 16/09/2025 | 20/09/2025      | [Lab 13](https://000013.awsstudygroup.com/) <br><br> [Lab 24](https://000024.awsstudygroup.com/) <br><br> [Lab 57](https://000057.awsstudygroup.com/) |
 
 ### Week 2 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully fixed an outdated CloudFormation template during the Transit Gateway lab.
+* Successfully created AWS Transit Gateway to allow for connection between VPCs via a common hub.
+* Learnt the hard way regarding resource cleanup and verified cost/budget alerts (charged $12 credits).
+* Gained hands-on experience with S3 Buckets (static website hosting, versioning, replication).
+* Successfully created Backup Plans and Vaults using AWS Backup, including restoration tests.
+* Configured Storage Gateway and successfully completed file sharing tasks.
+* Completed Module 3 theory and labs.

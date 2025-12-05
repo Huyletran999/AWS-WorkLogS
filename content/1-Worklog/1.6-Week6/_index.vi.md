@@ -1,58 +1,39 @@
----
-title: "Worklog Tuần 6"
-date: "`r Sys.Date()`"
-weight: 1
+﻿---
+title: "Nhật ký công việc Tuần 6"
+date: "2025-09-09"
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Mục tiêu Tuần 6:
+
+* Hoàn thành và nộp đề xuất (proposal)
+* Phân công nhiệm vụ với các thành viên trong nhóm để bắt đầu thực hiện workshop
+
+### Các nhiệm vụ thực hiện trong tuần này:
 
 
-### Mục tiêu tuần 6:
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| :--- | :--- | :---: | :---: | :--- |
+| T2 | - Định dạng lại và chỉnh sửa nhật ký công việc (worklog), bổ sung thêm thông tin và tóm tắt<br> - Triển khai thành công nhật ký công việc lên Github Page | 13/10/2025 | 13/10/2025 | |
+| T3 | - Họp nhóm<br> - Chỉnh sửa đề xuất workshop: Tập trung vào việc sử dụng GuardDuty để phát hiện xâm nhập thay vì dùng custom Lambda function do yêu cầu dataset lớn và thời gian phát triển dài. <br> - Vẽ lại AWS Architecture: Thêm GuardDuty thay thế cho CloudWatch Alarm <br> - Viết bản nháp cho đề xuất, phác thảo chức năng cơ bản và ước tính chi phí sơ bộ. | 14/10/2025 | 14/10/2025 | |
+| T4 | - Họp nhóm<br> - Chỉnh sửa đề xuất workshop: <br> &emsp; + Tích hợp sử dụng EventBridge <br> &emsp; + Tính toán lại chi phí bằng cách giảm loại EC2 instance và giờ hoạt động <br> - Cập nhật AWS Architecture: Thêm icon EventBridge và các kết nối liên quan | 15/10/2025 | 15/10/2025 | |
+| T5 | - Cập nhật AWS Architecture:<br> &emsp; + Sắp xếp lại các icon để kết nối rõ ràng hơn. <br> &emsp; + Di chuyển SSM vào trong region group <br> &emsp; + Thêm public subnet group cho EC2 Instance <br> - Cài đặt AmazonQ để phân tích đề xuất tốt hơn <br> - Chỉnh sửa đề xuất workshop: Tính toán lại chi phí sử dụng AWS Pricing Calculator <br> - Chuyển đổi bản nháp đề xuất sang mã markdown và triển khai thành công lên Github Pages <br> - Tham gia hội thảo trực tuyến 𝗗𝗫<𝗶𝗻𝗔𝗰𝘁𝗶𝗼𝗻> 𝗧𝗮𝗹𝗸#𝟳: Reinventing DevSecOps with AWS Generative AI | 16/10/2025 | 16/10/2025 | |
+| T6 | - Tổng hợp tài liệu ôn tập cho kỳ thi giữa kỳ | 17/10/2025 | 17/10/2025 | |
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Thành tựu Tuần 6:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Hoàn thiện Đề xuất:
 
+  * Hoàn thành nhiều lần chỉnh sửa cho đề xuất workshop, chuyển đổi từ việc dùng custom Lambda function sang sử dụng GuardDuty để phát hiện xâm nhập.
+  * Tính toán lại và giảm thành công chi phí ước tính bằng cách tối ưu hóa loại EC2 instance và giờ hoạt động.
+  * Chuyển đổi sang markdown và triển khai bản nháp đề xuất lên GitHub Pages.
 
-### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Cập nhật Kiến trúc và Hệ thống:
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+  * Chỉnh sửa sơ đồ AWS Architecture, tích hợp GuardDuty, EventBridge, đồng thời tinh chỉnh lại cách sắp xếp icon và các nhóm subnet để đảm bảo tính rõ ràng và chính xác.
+  * Cập nhật nhật ký công việc và triển khai thành công nhật ký đã chỉnh sửa lên GitHub Pages.
+  * Cài đặt AmazonQ.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Tham dự hội thảo trực tuyến **'DX<inAction> Talk#7: Reinventing DevSecOps with AWS Generative AI'**.
+* Tổng hợp tài liệu ôn tập cho kỳ thi giữa kỳ.

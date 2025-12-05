@@ -1,57 +1,40 @@
----
+﻿---
 title: "Week 9 Worklog"
-date: "`r Sys.Date()`"
+date: "2025-09-09"
 weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 9 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Keep working on the workshop
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+
+| Day | Task                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Start Date | Completion Date | Reference Material                                                                       |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ----------------- | ------------------------------------------------------------------------------------------ |
+| 2   | - AWS Architecture revised:<br>&emsp; + Removed AWS Detective <br>&emsp; + Updated with Step Function Workflow instead of a singular AWS Lambda Function <br>&emsp; + Added Custom Dashboard: A static custom dashboard website hosted with S3 and use Athena to query from data lake <br>                                                                                                                                                                                              | 03/11/2025 | 03/11/2025      |                                                                                          |
+| 3   | - Start on writing and reviewing inline poilicies for Lambdas and User Roles.                                                                                                                                                                                                                                                                                                                                                                                                           | 04/11/2025 | 04/11/2025      |                                                                                          |
+| 4   | - Team meetings: Progress report:<br>&emsp; + IR Workflow: Halfway done, EC2 quarantine function is finished, not tested with findings yet.                                                                                                                                                                                                                                                                                                                                             | 05/11/2025 | 05/11/2025      |                                                                                          |
+| 5   | - Team meetings<br> - Researched on ETL Pipeline approach: <br>&emsp; + Instead of using Glue ELT Jobs, we use custom Lambda ELT pipeline for CloudTrail and CloudWatch  logs <br>&emsp; + Store raw logs into a Raw Log S3 Bucket then use ETL Lambda to process the data and write it to a Proccesed Data S3 to then be Crawled <br> - AWS Architecture revised: Added a new group: DATA PREP group which contain the Raw Log S3 Bucket and the ETL Lambda <br>- School subject: <br> | 06/11/2025 | 06/11/2025      | [Advanced Writing](https://www.coursera.org/account/accomplishments/verify/EDQ1NY2UG063) |
+| 6   | - Researched on Kinesis Data Firehose to collect log: Good for future usage, not suitable for current project because real time streaming data was not necessary, using batch processing is better<br> - Succesfully build an ETL Pipeline for CloudTrail logs: Triggered by object creation in CloudTrail Raw Log Bucket and reformatted the raw logs into JSONL and save it into Proccessed S3 <br> - Succesfully crawled and queried the processed log to show CloudTrail Events     | 07/11/2025 | 07/11/2025      |                                                                                          |
 
 ### Week 9 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Architecture Refinement & Decision Making:**
+    * Updated the Incident Response (IR) mechanism to use a **Step Functions Workflow** instead of a single Lambda function to improve orchestration.
+    * Introduced a **Custom Dashboard** strategy (static website hosted on S3) that uses Athena to query the data lake.
+    * Conducted a comparative analysis between **AWS Kinesis Data Firehose** and batch processing; selected the batch approach for cost-efficiency as real-time streaming was not required.
 
-* Successfully created and configured an AWS Free Tier account.
+* **Data Pipeline Implementation:**
+    * Created a new **DATA PREP** architectural group, featuring a Raw Log S3 Bucket and a custom ETL Lambda.
+    * Built and deployed a **serverless ETL Lambda pipeline** to process CloudTrail logs, automatically triggered by new object creation in the Raw Log S3 Bucket.
+    * Successfully crawled and queried the processed CloudTrail logs (formatted as JSONL) using **AWS Glue and Athena**.
+    
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* **Security & IAM Configuration:**
+    * Started the security hardening process by writing and reviewing **inline policies** for Lambda functions and User Roles to ensure least-privilege access.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Project Progress:**
+    * Achieved 50% completion of the IR Step Functions Workflow, with the **EC2 quarantine function** fully coded (pending findings test).

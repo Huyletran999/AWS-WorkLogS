@@ -1,31 +1,18 @@
----
+﻿---
 title: "Translated Blogs"
-date: "`r Sys.Date()`"
+date: 2025-09-10
 weight: 3
 chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+This section will list and introduce the blogs you have translated.
 
-This section will list and introduce the blogs you have translated. For example:
+###  [Blog 1 - Giới thiệu AWS Trust Center](3.1-Blog1/)
+Blog này giới thiệu về AWS Trust Center, một nguồn tài nguyên trực tuyến thống nhất giúp khách hàng dễ dàng tiếp cận thông tin về bảo mật, tuân thủ và quyền riêng tư của AWS. Bài viết giải thích cách Trust Center hỗ trợ người dùng tìm hiểu về các biện pháp kiểm soát trung tâm dữ liệu, xem báo cáo đánh giá tuân thủ, và hiểu rõ cơ chế kiểm soát truy cập, từ đó xây dựng niềm tin vững chắc vào sự minh bạch của nền tảng đám mây.
 
-###  [Blog 1 - Getting started with healthcare data lakes: Using microservices](3.1-Blog1/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+###  [Blog 2 - Cách Derive mở rộng nền tảng giao dịch phi tập trung độ trễ thấp](3.2-Blog2/)
+Bài viết này chia sẻ câu chuyện thành công của Derive trong việc xây dựng nền tảng giao dịch phi tập trung lai (hybrid DEX) với độ trễ cực thấp và khả năng xử lý hàng tỷ đô la khối lượng giao dịch. Bạn sẽ khám phá kiến trúc sử dụng AWS Graviton trên Amazon EKS kết hợp với Amazon Aurora để tối ưu hóa hiệu năng tính toán, quản lý rủi ro và xử lý khớp lệnh tốc độ cao, đồng thời tìm hiểu về mô hình kết hợp giữa hiệu quả tập trung và bảo mật phi tập trung.
 
-###  [Blog 2 - ...](3.2-Blog2/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
-
-###  [Blog 3 - ...](3.3-Blog3/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
-
-###  [Blog 4 - ...](3.4-Blog4/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
-
-###  [Blog 5 - ...](3.5-Blog5/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
-
-###  [Blog 6 - ...](3.6-Blog6/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+###  [Blog 3 - SQL to NoSQL: Hiện đại hóa lớp truy cập dữ liệu với Amazon DynamoDB](3.3-Blog3/)
+Đây là phần cuối trong loạt bài về di chuyển từ SQL sang NoSQL, tập trung vào việc thiết kế lớp truy cập dữ liệu hiệu quả cho Amazon DynamoDB. Blog hướng dẫn chi tiết về cách xử lý các mô hình truy cập phức tạp như thiết kế lớp trừu tượng API, xử lý bộ lọc (filtering), thực hiện phân trang (pagination), quản lý các trường hợp biên và thực hiện các phép tổng hợp dữ liệu (aggregations) để tối ưu hóa hiệu suất ứng dụng.
