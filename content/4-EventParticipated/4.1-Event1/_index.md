@@ -75,6 +75,4 @@ Attending the **AI-Driven Development Life Cycle: Reimagining Software Engineeri
 
 
 #### Some event photos
-![Group picture during the event](/images/Event/TheBois-AIDLC.jpg)
-
-![alt text](/images/Events/TheBois-AIDLC.jpg)
+![Group picture during the event](/images/Events/TheBois-AIDLC.jpg)
