@@ -10,7 +10,7 @@ pre: " <b> 1.1. </b> "
 * Connect with FCJ members and mentors.
 * Find out what working in an office is like.
 * Install Linux, learn how to properly use Linux.
-* Learn the basics of AWS, console and CLI.
+* Learn the basics of AWS.
 * Complete first and second module.
 
 ### Tasks to be carried out this week:
