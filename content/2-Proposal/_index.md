@@ -10,7 +10,7 @@ pre: " <b> 2. </b> "
 
 # Automated AWS Incident Response and Forensics System
 
-**Proposal Link:** [Proposal](https://docs.google.com/document/d/1RcPJmiVxS80qdi0wOvHltBcSoZtRC97LngEZEkKC09k/edit?brid=hv-MPz2j8n_U1ZiCdslbyw&tab=t.0)
+# Proposal Link: [Proposal Doc](https://docs.google.com/document/d/1RcPJmiVxS80qdi0wOvHltBcSoZtRC97LngEZEkKC09k/edit?brid=hv-MPz2j8n_U1ZiCdslbyw&tab=t.0)
 
 ## 1. Executive Summary
 Our team is building an automated incident response and forensics solution as part of the AWS First Cloud Journey internship program. The idea is straightforward—when a security issue happens in AWS, we want the system to respond automatically without waiting for manual intervention.

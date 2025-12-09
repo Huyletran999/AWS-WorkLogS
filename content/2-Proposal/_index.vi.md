@@ -10,7 +10,7 @@ pre: " <b> 2. </b> "
 
 # Hệ thống Ứng phó Sự cố và Điều tra Số Tự động trên AWS
 
-**Liên kết Đề xuất:** [Proposal](https://docs.google.com/document/d/1RcPJmiVxS80qdi0wOvHltBcSoZtRC97LngEZEkKC09k/edit?brid=hv-MPz2j8n_U1ZiCdslbyw&tab=t.0)
+# Liên kết Proposal: [Proposal Doc](https://docs.google.com/document/d/1RcPJmiVxS80qdi0wOvHltBcSoZtRC97LngEZEkKC09k/edit?brid=hv-MPz2j8n_U1ZiCdslbyw&tab=t.0)
 
 ## 1. Tóm tắt Điều hành
 Nhóm của chúng tôi đang xây dựng một giải pháp ứng phó sự cố và điều tra số tự động như một phần của chương trình thực tập AWS First Cloud Journey. Ý tưởng rất đơn giản—khi một vấn đề bảo mật xảy ra trong AWS, chúng tôi muốn hệ thống phản ứng tự động mà không cần chờ đợi sự can thiệp thủ công.
