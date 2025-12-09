@@ -43,7 +43,7 @@ To objectively reflect on the internship process, I would like to self-assess ba
 
 | No. | Criteria                              | Description                                                                                      | Good | Fair | Average |
 | :-- | :------------------------------------ | :----------------------------------------------------------------------------------------------- | :--: | :--: | :-----: |
-| 1   | **Professional knowledge and skills** | Understanding of the industry, applying knowledge to reality, tool usage skills, work quality    |  ✅  |  ☐   |    ☐    |
+| 1   | **Professional knowledge and skills** | Understanding of the industry, applying knowledge to reality, tool usage skills, work quality    |  ☐  |  ✅    |    ☐    |
 | 2   | **Learning ability** | Absorbing new knowledge, learning quickly                                                        |  ☐   |  ✅  |    ☐    |
 | 3   | **Proactivity** | Self-researching, accepting tasks without waiting for instructions                               |  ☐   |  ✅  |    ☐    |
 | 4   | **Sense of responsibility** | Completing work on time, ensuring quality                                                        |  ✅  |  ☐   |    ☐    |
