@@ -15,17 +15,11 @@ pre: " <b> 1.12. </b> "
 
 | Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | :---: | :--- | :--------: | :-------------: | :----------------- |
-| T2 | - Cài đặt thành công AWS CDK với AWS CLI<br> - Hoàn thành hướng dẫn tạo ứng dụng đầu tiên với CDK: <br>&emsp; + Triển khai (deploy) stack trên tài khoản AWS <br>&emsp; + Sử dụng `diff` để so sánh các thay đổi <br>&emsp; + Hủy (destroy) stack sau khi hoàn thành <br> - Tạo Github Organization cho nhóm | 25/11/2025 | 25/11/2025 | [CDK Tutorial](https://docs.aws.amazon.com/cdk/v2/guide/hello-world.html) |
+ |
 | T3 | - **Cập nhật IR Step Functions:** Thêm **Map State** để lặp qua các Instance bị cô lập và kích hoạt SSM Lambda cho các Instance đó để thu thập log phục vụ điều tra số (forensics).<br> - **CDK:** Chuyển môi trường kiểm thử CDK sang một tài khoản chuyên biệt mới. | 26/11/2025 | 26/11/2025 | |
 | T6 | - **Họp nhóm:**<br>&emsp; + Phân công nhiệm vụ CDK cho các thành viên <br>&emsp; + Bắt đầu cập nhật đề xuất và sơ đồ kiến trúc <br> - **Sửa lỗi và cải tiến IR Step Functions:** <br>&emsp; + Sửa lỗi `EC2Isolate` Lambda: Chỉnh lại phương thức parse dữ liệu <br>&emsp; + Cải thiện trạng thái: Thêm Parsing Lambda và sắp xếp lại các function <br>&emsp; + SSM bị lỗi do thiếu IAM: Đã thêm các role cần thiết vào SSM Forensics Function. | 28/11/2025 | 30/11/2025 | |
 
 ### Thành tựu Tuần 12:
-
-* **Khởi tạo Infrastructure as Code (IaC):**
-  * Cài đặt và cấu hình thành công **AWS CDK** với CLI.
-  * Nắm vững vòng đời cơ bản của CDK thông qua việc deploy, diff, và destroy stack trong môi trường thực tế.
-  * Thành lập **GitHub Organization** để tập trung các repository của nhóm và quản lý việc chuyển đổi sang CDK.
-
 * **Logic Phản ứng sự cố & Điều tra số:**
   * Nâng cấp quy trình Step Functions bằng cách triển khai **Map State**, cho phép hệ thống lặp và xử lý đồng thời nhiều EC2 instance bị cô lập.
   
