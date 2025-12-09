@@ -23,7 +23,7 @@ Throughout this internship, I have acquired a diverse set of skills, ranging fro
 The company culture strikes a perfect balance between professionalism and approachability. Mutual respect is evident, and while work is taken seriously, the atmosphere remains enjoyable. I was particularly impressed by the collective spirit during urgent projects, where everyone, regardless of position, collaborated to support one another. This inclusivity made me feel like a true member of the team, not just an intern.
 
 **6. Internship Policies / Benefits**
-The internship program offers practical benefits, including a fair allowance and flexible working hours when necessary. Additionally, the opportunity to participate in internal training sessions is a significant advantage that demonstrates the company's investment in talent development.
+The internship program offers practical benefits, including a fair flexible working hours when necessary. Additionally, the opportunity to participate in internal training sessions is a significant advantage that demonstrates the company's investment in talent development.
 
 ---
 

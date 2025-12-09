@@ -23,7 +23,7 @@ Trong quá trình thực tập, tôi đã học được rất nhiều kỹ năn
 Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng không khí vẫn vui vẻ, không gò bó. Tôi rất ấn tượng với tinh thần đồng đội khi chạy các dự án gấp, mọi người không phân biệt vị trí đều xắn tay vào hỗ trợ nhau. Điều này khiến tôi cảm thấy mình thực sự là một phần của tập thể chứ không chỉ là thực tập sinh.
 
 **6. Chính sách / Quyền lợi thực tập**
-Công ty có chính sách hỗ trợ thực tập phí rõ ràng và linh hoạt về thời gian làm việc khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ (internal training) là một điểm cộng lớn cho thấy công ty thực sự đầu tư vào con người.
+Công ty có chính sách linh hoạt về thời gian làm việc khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ (internal training) là một điểm cộng lớn cho thấy công ty thực sự đầu tư vào con người.
 
 ---
 
