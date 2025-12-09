@@ -42,9 +42,9 @@ During my internship, I participated in four events. Each one was a memorable ex
 &emsp;**Role:** Attendee  
 
 ### [Event 4](4.4-Event4/)  
-&emsp;**Event Name:** AWS Cloud Mastery Series #2 - DevOps on AWS  
+&emsp;**Event Name:** AWS Cloud Mastery Series #3: AWS Well-Architected – Security Pillar Workshop 
 
-&emsp;**Date & Time:** 08:30, November 17th, 2025  
+&emsp;**Date & Time:** 08:30, November 29th, 2025  
 
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
 
