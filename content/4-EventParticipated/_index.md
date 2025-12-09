@@ -41,7 +41,7 @@ During my internship, I participated in four events. Each one was a memorable ex
 
 &emsp;**Role:** Attendee  
 
-### [Event 4](4.3-Event3/)  
+### [Event 4](4.4-Event4/)  
 &emsp;**Event Name:** AWS Cloud Mastery Series #2 - DevOps on AWS  
 
 &emsp;**Date & Time:** 08:30, November 17th, 2025  
