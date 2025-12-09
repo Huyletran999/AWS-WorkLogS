@@ -54,7 +54,7 @@ pre: " <b> 4.3. </b> "
 
 **- Lợi ích:** Tự động hóa, Khả năng mở rộng, Khả năng tái tạo và Hợp tác tốt hơn
 
-# AWS CloudFormation
+## AWS CloudFormation
 
 Công cụ IaC tích hợp sẵn của AWS, sử dụng các mẫu (templates) viết bằng YAML hoặc JSON, có thể xây dựng mọi cơ sở hạ tầng AWS một cách tự động.
 
@@ -66,7 +66,7 @@ Công cụ IaC tích hợp sẵn của AWS, sử dụng các mẫu (templates) v
 
 **- Phát hiện sai lệch (Drift Detection):** Phát hiện các thay đổi trong cơ sở hạ tầng thực tế so với Stack => Cập nhật Stack hoặc hoàn tác thay đổi, hữu ích cho việc kiểm soát phiên bản.
 
-# AWS Cloud Development Kit (CDK)
+## AWS Cloud Development Kit (CDK)
 
 Khung phát triển phần mềm nguồn mở, hỗ trợ IaC bằng các ngôn ngữ lập trình thực (Python, Java, C#.Net, Type/JavaScript và Go).
 
@@ -75,17 +75,17 @@ Khung phát triển phần mềm nguồn mở, hỗ trợ IaC bằng các ngôn 
   + L2 Construct: Cung cấp mức độ trừu tượng cao hơn thông qua API dựa trên ý định trực quan, đóng gói các phương pháp hay nhất (best practices) và mặc định bảo mật.
   + L3 Construct: Các mẫu kiến trúc hoàn chỉnh với nhiều tài nguyên, được triển khai theo định hướng sẵn (opinionated) và triển khai nhanh chóng.
 
-# AWS Amplify
+## AWS Amplify
 
 Nền tảng AWS giúp dễ dàng xây dựng, triển khai và mở rộng các ứng dụng web và di động, sử dụng CloudFormation bên dưới: Các Stack được triển khai để xây dựng cơ sở hạ tầng theo chương trình.
 
-# Terraform
+## Terraform
 
 Công cụ IaC, bắt đầu bằng việc định nghĩa cơ sở hạ tầng trong mã Terraform, lên kế hoạch (plan) và sau đó áp dụng (apply) cơ sở hạ tầng trên nhiều nền tảng đám mây như Azure, AWS, Google Cloud, v.v.
 
 **- Điểm mạnh:** Hỗ trợ đa đám mây (Multi-Cloud), Theo dõi trạng thái (State tracking) với cùng một cấu hình.
 
-# Cách chọn công cụ IaC?
+## Cách chọn công cụ IaC?
 **- Tiêu chí:**
   + Kế hoạch sử dụng một Đám mây hay nhiều Đám mây?
   + Vai trò là Developer hay Ops?
@@ -93,7 +93,7 @@ Công cụ IaC, bắt đầu bằng việc định nghĩa cơ sở hạ tầng t
 
 ## Dịch vụ Container trên AWS
 
-# Dockerfile
+## Dockerfile
 
 Dockerfile định nghĩa cách xây dựng một container image, mô tả môi trường, các phụ thuộc, các bước xây dựng và cấu hình runtime cuối cùng, đảm bảo ứng dụng chạy nhất quán trên mọi hệ thống hỗ trợ Docker.
 
@@ -101,7 +101,7 @@ Dockerfile định nghĩa cách xây dựng một container image, mô tả môi
 
 **- Quy trình:** Dockerfile xây dựng Docker Image, image này có thể được dùng để chạy Container và đẩy lên ECR/Docker Hub.
 
-# Amazon ECR
+## Amazon ECR
 
 Một container registry được quản lý hoàn toàn giúp dễ dàng lưu trữ, quản lý và chia sẻ bảo mật các Docker container image.
 Đây là registry container riêng tư, bảo mật và có khả năng mở rộng của chính AWS.
@@ -114,7 +114,7 @@ Một container registry được quản lý hoàn toàn giúp dễ dàng lưu t
 
 **- Điều phối (Orchestration):** Điều phối nhiều quy trình container: khởi động lại container, tự động mở rộng khi tải cao, phân phối lưu lượng hiệu quả, quản lý vị trí đặt và chạy container.
 
-# Kubernetes
+## Kubernetes
 Mã nguồn mở, tự động hóa việc triển khai, mở rộng, phục hồi và cân bằng tải.
 **- Thành phần:**
   + Master Node: Control Plane, quản lý các worker node và pod.
@@ -134,13 +134,13 @@ So sánh ECS và EKS
 | **Hệ sinh thái/Cộng đồng** | Công cụ gốc AWS và cộng đồng | **Hệ sinh thái lớn hơn** & công cụ cộng đồng |
 | **Tóm tắt** | ECS = dễ hơn, chạy nhanh hơn, **chi phí vận hành thấp hơn** | EKS = linh hoạt hơn, kiểm soát nhiều hơn, **phức tạp hơn** |
 
-# App Runner
+## App Runner
 
 Phù hợp để triển khai nhanh các ứng dụng web và REST API, lý tưởng cho khối lượng công việc sản xuất từ nhỏ đến trung bình.
 
 ## Giám sát & Khả năng quan sát (Monitoring & Observability)
 
-# CloudWatch
+## CloudWatch
 - Giám sát các Tài nguyên AWS và Ứng dụng chạy trên AWS trong thời gian thực
 - Cung cấp khả năng quan sát
 - Cảnh báo và phản hồi tự động
@@ -148,7 +148,7 @@ Phù hợp để triển khai nhanh các ứng dụng web và REST API, lý tư�
 
 **- CloudWatch metrics:** Dữ liệu về hiệu suất của hệ thống trên AWS hoặc on-premise với CloudWatch Agent, tích hợp tốt với EventBridge, Auto Scaling và quy trình DevOps.
 
-# AWS X-Ray
+## AWS X-Ray
 **- Truy vết phân tán (Distributed Tracing):** Theo dõi các yêu cầu từ đầu đến cuối, vẽ bản đồ và đường đi giữa các dịch vụ đã truy cập, thêm SDK vào mã để theo dõi ID.
 
 **- Performance Insight:** Phân tích nguyên nhân gốc rễ cho độ trễ và lỗi, suy ra thông tin chi tiết từ các dấu vết (traces) và cung cấp Giám sát Người dùng Thực (Real User Monitoring).

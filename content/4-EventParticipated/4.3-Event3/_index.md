@@ -139,7 +139,7 @@ Suitable for quick deployment of web applications and REST APIS, ideal for small
 
 ## Monitoring & Observability
 
-# CloudWatch
+## CloudWatch
 - Monitor AWS Resources and Applications running on AWS in real time
 - Provide observabilty
 - Alarms and automated responses
