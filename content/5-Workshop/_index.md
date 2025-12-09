@@ -1,32 +1,28 @@
-﻿---
+---
 title: "Workshop"
-date: 2025-09-10
-weight: 5
+date: "2000-01-01"
+weight: 05
 chapter: false
 pre: " <b> 5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+# AWS Auto Incident Response System Setup
 
 #### Overview
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+This guide provides a complete, step-by-step procedure for deploying our automated incident response and forensic system in AWS. This system leverages **CloudTrail**, **GuardDuty**, **VPC Flow Logs**, **Kinesis Firehose**, **Glue**, **Athena**, and **Lambda** functions orchestrated by **AWS Step Functions** to automatically detect, analyze, and quarantine compromised resources like EC2 instances and IAM users. Futher log forensics capacity is added by setting up a **Security Dashboard** hosted on S3 and accessed via **CloudFront** and **Cognito**, query log using **API Gateway** and **Lambda**.
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
 
 #### Content
-
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
-
+1. [Overview](5.1-Workshop-overview/)
+2. [Prerequisites](5.2-Prerequisites)
+3. [Phase 1: Foundation Setup](5.3-Foundation-Setup/)
+4. [Phase 2: Monitoring Setup](5.4-Monitoring-Setup/)
+5. [Phase 3: Processing Setup](5.5-Processing-Setup/)
+6. [Phase 4: Automation Setup](5.6-Automation-Setup/)
+7. [Phase 5: Dashboard Setup](5.7-Dashboard-Setup/)
+8. [Verify](5.8-Verify-Setup/)
+9. [Use CDK](5.9-Use-CDK/)
+10. [Cleanup](5.10-Cleanup/)
+11. [Appendices](5.11-Appendices/)

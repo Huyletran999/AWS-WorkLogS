@@ -1,20 +1,20 @@
 ---
-title : "Introduction"
-date: 2025-09-09
+title : "Overview"
+date: "2000-01-01" 
 weight : 1 
 chapter : false
 pre : " <b> 5.1. </b> "
 ---
-#### VPC endpoints
 
-+ **VPC endpoints** are virtual devices. They are horizontally scaled, redundant, and highly available VPC components. They allow communication between your compute resources and AWS services without imposing availability risks.
-+ Compute resources running in VPC can access  **Amazon S3**  using a Gateway endpoint. PrivateLink interface endpoints can be used by compute resources running in VPC or on-premises.
+#### System Components
++ **Auto Incident Response and Forensics** is an architecture that uses automation services to ingest, process, and automatically respond to security findings, minimizing the time required for human intervention and aids security personel in visualizing and analyzing logs.
++ This system is built around **AWS Security Services** (CloudTrail, GuardDuty, VPC Flow Logs, CloudWatch) feeding data into a **Centralized Data Lake (S3/Glue/Athena)** for analysis.
++ The core automation is driven by **AWS EventBridge** rules triggering **AWS Step Functions** workflows, which then execute **AWS Lambda** functions to perform isolation and alerting actions.
 
 #### Workshop overview
-
-In this workshop, you will use two VPCs.
-
-+ **"VPC Cloud"** is for cloud resources such as a  **Gateway endpoint** and an EC2 instance to test with.
-+ **"VPC On-Prem"** simulates an on-premises environment such as a factory or corporate datacenter. An EC2 instance running strongSwan VPN software has been deployed in "VPC On-prem" and automatically configured to establish a Site-to-Site VPN tunnel with AWS Transit Gateway. This VPN simulates connectivity from an on-premises location to the AWS cloud. To minimize costs, only one VPN instance is provisioned to support this workshop. When planning VPN connectivity for your production workloads, AWS recommends using multiple VPN devices for high availability.
-
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+In this workshop, you will deploy a multi-phase system to achieve end-to-end security automation. This includes:
++ **Foundation Setup**: Creating dedicated S3 buckets and IAM roles to support all services.
++ **Monitoring Setup**: Enabling and configuring key security logs (CloudTrail, GuardDuty, VPC Flow Logs) to direct data to the central log ingestion point.
++ **Processing Setup**: Deploying Kinesis Firehose, Lambda ETLs, and Glue/Athena tables to transform raw logs into an easily queryable security data lake.
++ **Automation Setup**: Creating the **Isolation Security Group**, **SNS Topic**, **Incident Response Lambda Functions**, and the **Step Functions State Machine** that executes automatic quarantine actions when GuardDuty detects findings.
++ **Dashboard Setup**: Hosting a secure, **S3-based static web interface** accelerated by **CloudFront** and protected by **Cognito** to provide analysts with real-time visualization of **forensic data** and direct query capabilities via **API Gateway**.
