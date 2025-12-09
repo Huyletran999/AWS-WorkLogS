@@ -94,4 +94,4 @@ pre: " <b> 4.3. </b> "
 #### Một số hình ảnh sự kiện
 
 
-![Nhóm Mèo Cam Đeo Khăn](/images/Event/Meocamdeokhan.jpg)
+![Nhóm Mèo Cam Đeo Khăn](/images/Events/Meocamdeokhan.jpg)

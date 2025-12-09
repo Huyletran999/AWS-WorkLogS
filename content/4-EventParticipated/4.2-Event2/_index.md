@@ -94,4 +94,4 @@ pre: " <b> 4.3. </b> "
 #### Some event photos
 
 
-![Mèo Cam Đeo Khăn group](/images/Event/Meocamdeokhan.jpg)
+![Mèo Cam Đeo Khăn group](/images/Events/Meocamdeokhan.jpg)

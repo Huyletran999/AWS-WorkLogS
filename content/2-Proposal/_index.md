@@ -509,11 +509,15 @@ The project is considered successful if:
 **Frontend & Dashboards:**
 * Custom HTML/CSS/JavaScript
 * AWS Management Console
+* API Gateway (facilitate the connection between the static dashboard and the backend forensic data functions.)
+* CloudFront (CDN for accelerating the delivery of the S3-hosted static dashboard.)
+
 
 **Backend & Processing:**
 * AWS Step Functions (workflow orchestration)
 * AWS Lambda (Python 3.12)
 * Amazon EC2 (analysis instances)
+* Amazon EventBridge (event router that sends security findings from GuardDuty to the Step Functions workflow.)
 
 **Data & Storage:**
 * Amazon S3 (forensic evidence storage)
@@ -521,6 +525,7 @@ The project is considered successful if:
 * Amazon Athena (SQL queries against S3 data)
 * AWS CloudTrail (audit logs)
 * AWS CloudWatch (flow logs)
+* Firehose (responsible for streaming processed forensic data to the S3)
 
 **Infrastructure & Automation:**
 * AWS CDK (Infrastructure-as-Code, Python)
@@ -531,6 +536,10 @@ The project is considered successful if:
 * Amazon GuardDuty (threat detection)
 * Amazon CloudWatch (monitoring and alarms)
 * Amazon Cognito (authentication)
+* SNS (Distributing incident alerts to channels like Slack and Email.)
+* SES (Sending email notifications as part of the alerting process.)
+* KMS (Used for key management, which is essential for the AES-256)
+
 
 ### Appendix B: Key Glossary
 
