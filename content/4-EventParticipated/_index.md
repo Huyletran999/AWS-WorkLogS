@@ -10,18 +10,18 @@ During my internship, I participated in four events. Each one was a memorable ex
 
 ---
 
-### [Event 1](4.2-Event2/)  
+### [Event 1](4.1-Event1/)  
 &emsp;**Event Name:** AI-Driven Development Life Cycle: Reimagining Software Engineering  
 
 &emsp;**Date & Time:** 09:00, October 3rd, 2025  
 
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
 
-&emsp;**Role:** Attendee  
+&emsp;**Role:** Attendee   
 
 ---
 
-### [Event 2](4.3-Event2/)  
+### [Event 2](4.2-Event2/)  
 &emsp;**Event Name:** AWS Cloud Mastery Series #1 - AI/ML/GenAI on AWS
 
 &emsp;**Date & Time:** 08:30, November 15th, 2025  
@@ -32,7 +32,7 @@ During my internship, I participated in four events. Each one was a memorable ex
 
 ---
 
-### [Event 3](4.4-Event3/)  
+### [Event 3](4.3-Event3/)  
 &emsp;**Event Name:** AWS Cloud Mastery Series #2 - DevOps on AWS  
 
 &emsp;**Date & Time:** 08:30, November 17th, 2025  
@@ -41,7 +41,7 @@ During my internship, I participated in four events. Each one was a memorable ex
 
 &emsp;**Role:** Attendee  
 
-### [Event 4](4.4-Event4/)  
+### [Event 4](4.3-Event3/)  
 &emsp;**Event Name:** AWS Cloud Mastery Series #2 - DevOps on AWS  
 
 &emsp;**Date & Time:** 08:30, November 17th, 2025  
