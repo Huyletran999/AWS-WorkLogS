@@ -7,9 +7,6 @@ pre: " <b> 1.7. </b> "
 ---
 
 ### Week 7 Objectives:
-
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
 * Design and prototype automated incident response workflows and refine the project architecture based on mentor feedback.
 
 ### Tasks to be carried out this week:

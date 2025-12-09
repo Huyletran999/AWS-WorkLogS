@@ -7,7 +7,7 @@ pre: " <b> 1.12. </b> "
 ---
 ### Mục tiêu Tuần 12:
 
-* Khởi tạo và xác thực môi trường Infrastructure as Code (CDK).
+
 * Nâng cao quy trình Phản ứng sự cố với khả năng thu thập chứng cứ pháp y tự động (SSM).
 * Debug và tinh chỉnh Lambda function và IAM role để đảm bảo hoạt động tin cậy.
 

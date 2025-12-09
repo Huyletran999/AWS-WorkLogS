@@ -7,7 +7,7 @@ pre: " <b> 1.12. </b> "
 ---
 ### Week 12 Objectives:
 
-* Initialize and validate the Infrastructure as Code (CDK) environment.
+
 * Enhance the Incident Response workflow with automated forensics collection (SSM).
 * Debug and refine Lambda functions and IAM roles for reliable execution.
 

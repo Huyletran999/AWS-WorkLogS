@@ -10,8 +10,8 @@ pre: " <b> 1.10. </b> "
 
 ### Mục tiêu tuần 10:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nghiên cứu kỹ lưỡng và kiểm thử tất cả các thành phần để chuẩn bị tích hợp vào bản dựng cuối cùng của workshop.
+
 
 ### Các công việc cần triển khai trong tuần này---
 title: "Nhật ký công việc Tuần 10"

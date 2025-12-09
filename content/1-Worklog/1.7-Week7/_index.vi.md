@@ -7,9 +7,6 @@ pre: " <b> 1.7. </b> "
 ---
 
 ### Mục tiêu Tuần 7:
-
-* Kết nối và làm quen với các thành viên của First Cloud Journey.
-* Hiểu các dịch vụ AWS cơ bản, cách sử dụng console & CLI.
 * Thiết kế và tạo mẫu quy trình phản ứng sự cố tự động, tinh chỉnh kiến trúc dự án dựa trên phản hồi của mentor.
 
 ### Các nhiệm vụ thực hiện trong tuần này:
