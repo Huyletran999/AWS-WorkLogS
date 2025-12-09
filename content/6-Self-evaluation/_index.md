@@ -47,9 +47,9 @@ To objectively reflect on the internship process, I would like to self-assess ba
 | 2   | **Learning ability** | Absorbing new knowledge, learning quickly                                                        |  ☐   |  ✅  |    ☐    |
 | 3   | **Proactivity** | Self-researching, accepting tasks without waiting for instructions                               |  ☐   |  ✅  |    ☐    |
 | 4   | **Sense of responsibility** | Completing work on time, ensuring quality                                                        |  ✅  |  ☐   |    ☐    |
-| 5   | **Discipline** | Adhering to schedule, regulations, work processes                                                |  ✅  |  ☐   |    ☐    |
-| 6   | **Progressiveness** | Ready to receive feedback and improve oneself                                                    |  ✅  |  ☐   |    ☐    |
-| 7   | **Communication** | Presenting ideas, reporting work clearly                                                         |  ✅  |  ☐   |    ☐    |
+| 5   | **Discipline** | Adhering to schedule, regulations, work processes                                                |  ☐  |  ✅     |    ☐    |
+| 6   | **Progressiveness** | Ready to receive feedback and improve oneself                                                    |  ✅  |  ✅  |    ☐    |
+| 7   | **Communication** | Presenting ideas, reporting work clearly                                                         |  ☐   |  ☐   |    ☐    |
 | 8   | **Teamwork** | Working effectively with colleagues, participating in the team                                   |  ✅  |  ☐   |    ☐    |
 | 9   | **Professional conduct** | Respecting colleagues, partners, working environment                                             |  ✅  |  ☐   |    ☐    |
 | 10  | **Problem-solving mindset** | Identifying problems, proposing solutions, creativity                                            |  ✅  |  ☐   |    ☐    |

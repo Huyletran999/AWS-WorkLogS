@@ -1,8 +1,9 @@
 ﻿---
 title: "Internship Report"
 date: 2025-09-10
-weight: 1
+weight: 7
 chapter: false
+pre: " <b> 7. </b> "
 ---
 # Internship Report
 

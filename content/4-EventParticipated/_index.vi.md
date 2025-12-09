@@ -1,9 +1,9 @@
 ﻿---
 title: "Sự kiện đã tham gia"
 date: "2025-11-15"
-weight: 1
+weight: 4
 chapter: false
-pre: " <b> 4.3. </b> "
+pre: " <b> 4. </b> "
 ---
 
 # Báo cáo tóm tắt: “Chuỗi làm chủ AWS Cloud #1 - AI/ML/GenAI trên AWS”
