@@ -1,5 +1,5 @@
 ---
-title: "Translated Blogs"
+title: "Blog đã dịch"
 date: 2025-09-10
 weight: 3
 chapter: false
