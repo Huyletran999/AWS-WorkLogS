@@ -10,6 +10,8 @@ pre : " <b> 5.1. </b> "
 + **Auto Incident Response and Forensics** is an architecture that uses automation services to ingest, process, and automatically respond to security findings, minimizing the time required for human intervention and aids security personel in visualizing and analyzing logs.
 + This system is built around **AWS Security Services** (CloudTrail, GuardDuty, VPC Flow Logs, CloudWatch) feeding data into a **Centralized Data Lake (S3/Glue/Athena)** for analysis.
 + The core automation is driven by **AWS EventBridge** rules triggering **AWS Step Functions** workflows, which then execute **AWS Lambda** functions to perform isolation and alerting actions.
+  
+![AWS Architecture](/images/2-Proposal/AWSWorkshopArchitecture-Stepfunctions.drawio.png)
 
 #### Workshop overview
 In this workshop, you will deploy a multi-phase system to achieve end-to-end security automation. This includes:
