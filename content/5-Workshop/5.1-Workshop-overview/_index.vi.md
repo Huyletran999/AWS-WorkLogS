@@ -11,6 +11,8 @@ pre : " <b> 5.1. </b> "
 + Hệ thống này được xây dựng dựa trên **AWS Security Services** (CloudTrail, GuardDuty, VPC Flow Logs, CloudWatch) đưa dữ liệu vào một **Data Lake tập trung (S3/Glue/Athena)** để phân tích.
 + Tự động hóa cốt lõi được điều khiển bởi **AWS EventBridge** rules kích hoạt **AWS Step Functions** workflows, sau đó thực thi **AWS Lambda** functions để thực hiện các hành động cách ly và cảnh báo.
 
+![Kiến trúc AWS](/images/2-Proposal/AWSWorkshopArchitecture-Stepfunctions.drawio.png)
+
 #### Tổng quan về Workshop
 Trong workshop này, bạn sẽ triển khai một hệ thống đa giai đoạn để đạt được tự động hóa bảo mật từ đầu đến cuối. Bao gồm:
 + **Thiết lập nền tảng (Foundation Setup)**: Tạo các S3 buckets và IAM roles chuyên dụng để hỗ trợ tất cả các dịch vụ.
